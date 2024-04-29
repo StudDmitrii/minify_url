@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+.app{
+    background-color: rgb(110, 255, 231);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input, button{
+    border: none;
+    font-size: clamp(16px, 2vw, 20px);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#long_uri{
+    width: clamp(200px, 50vw, 600px);
+}
+
+#short_uri{
+    width: clamp(200px, 50vw, 300px);
+}
+
+input[type='submit'], button{
+    cursor: pointer;
+}
